@@ -12,7 +12,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
-    await fetch('http://localhost:3000/create-raft', {
+    await fetch('https://minting-rafts-api.herokuapp.com/create-raft', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
